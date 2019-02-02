@@ -11,4 +11,7 @@ public class recursion{
 			return sqrtHelp(n,guess);
 		}
 	}
+  public static double sqrt(double n) {
+		return sqrtHelp(n,n/2);
+	}
 }
