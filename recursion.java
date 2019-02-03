@@ -32,11 +32,25 @@ public class recursion{
     makeAllSums(n,0,result);
     return result;
   }
+  public static int fib(int n) {
+     if(n==0) {
+       return 0;
+     }
+     else if(n==1) {
+       return 1;
+     }
+     else {
+      return fib(n-1)+fib(n-2);
+     }
+   }
   public static void main(String[]args){
     System.out.println(sqrt(0.04,0.0001));
 		System.out.println(sqrt(4,0.01));
     ArrayList<Integer>a= new ArrayList<Integer>();
     makeAllSums(3,0,a);
     System.out.println(makeAllSums(3));
+    System.out.println(fib(3));
+    System.out.println(fib(2));
   }
+
 }
